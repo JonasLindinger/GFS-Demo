@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace _Project.Scripts
+namespace _Project.Scripts.Network
 {
     /// <summary>
     /// Contains some default settings for the project such as TickRate, etc.

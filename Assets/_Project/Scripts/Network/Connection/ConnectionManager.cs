@@ -1,11 +1,10 @@
 using System;
-using _Project.Scripts.Utils;
+using _Project.Scripts.Network.Utils;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-namespace _Project.Scripts.Connection
+namespace _Project.Scripts.Network.Connection
 {
     /// <summary>
     /// A Component that connects the UI with the NetworkManager.

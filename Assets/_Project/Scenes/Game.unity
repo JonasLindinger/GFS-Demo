@@ -8759,6 +8759,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3507529684465261469, guid: c5c251c4f6ea3694285b311cea75f2a2, type: 3}
   m_PrefabInstance: {fileID: 2001449968}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2042563310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2042563312}
+  - component: {fileID: 2042563311}
+  m_Layer: 0
+  m_Name: NetworkObjectSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2042563311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042563310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b889f1b4e454487945a560d03e852d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkClient: {fileID: 8741667502700124678, guid: 3441856bcdb9b9daab43401c5b886e20, type: 3}
+  _networkPlayer: {fileID: 3169945323350551769, guid: 69d5034f2b74de307b2d4be00050b199, type: 3}
+--- !u!4 &2042563312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042563310}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2057613880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9334,4 +9380,5 @@ SceneRoots:
   - {fileID: 540426371}
   - {fileID: 1636593513}
   - {fileID: 764830070}
+  - {fileID: 2042563312}
   - {fileID: 731577581}

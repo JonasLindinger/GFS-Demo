@@ -1,7 +1,7 @@
 using System.Net;
 using System.Text.RegularExpressions;
 
-namespace _Project.Scripts.Utils
+namespace _Project.Scripts.Network.Utils
 {
     /// <summary>
     /// Contains some static methods to validate user input.

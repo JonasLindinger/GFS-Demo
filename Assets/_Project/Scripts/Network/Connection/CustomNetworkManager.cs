@@ -3,7 +3,7 @@ using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using UnityEngine;
 
-namespace _Project.Scripts.Connection
+namespace _Project.Scripts.Network.Connection
 {
     /// <summary>
     /// A Custom Network Manager that inherits from the Unity Network Manager.
@@ -23,7 +23,7 @@ namespace _Project.Scripts.Connection
         
         private void Start()
         {
-            // Referencing the UnityTransport as default communication, so I don't have to set in the editor
+            // Referencing the UnityTransport as default communication, so I don't have to set in the editor.
             _transport = GetComponent<UnityTransport>();
             Singleton.NetworkConfig.NetworkTransport = _transport;
             
@@ -32,6 +32,9 @@ namespace _Project.Scripts.Connection
 
             // Setting the ConnectionApproval to false, so I don't need to handle that right now.
             Singleton.NetworkConfig.ConnectionApproval = false;
+
+            // Subscribing to the ConnectionEvent.
+            Singleton.OnConnectionEvent += ConnectionListener.OnConnectionEvent;
             
             // Singleton referencing
             Instance = this;
