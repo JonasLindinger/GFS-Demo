@@ -1,3 +1,4 @@
+using System;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using UnityEngine;
@@ -11,6 +12,10 @@ namespace _Project.Scripts.Connection
     [RequireComponent(typeof(UnityTransport))]
     public class CustomNetworkManager : NetworkManager
     {
+        // Events
+        public static Action OnCreatedConnection = delegate { };
+        
+        // Singleton reference
         private static CustomNetworkManager Instance { get; set; }
         
         // References
@@ -46,6 +51,7 @@ namespace _Project.Scripts.Connection
             if (Instance.StartClient())
             {
                 Debug.Log("Successfully started the client.");
+                OnCreatedConnection?.Invoke();
             }
         }
         #endif
@@ -62,6 +68,7 @@ namespace _Project.Scripts.Connection
             if (Instance.StartServer())
             {
                 Debug.Log("Successfully started the server.");
+                OnCreatedConnection?.Invoke();
             }
         }
         #endif

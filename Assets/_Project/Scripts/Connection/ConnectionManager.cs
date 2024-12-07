@@ -2,6 +2,7 @@ using System;
 using _Project.Scripts.Utils;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace _Project.Scripts.Connection
@@ -17,7 +18,9 @@ namespace _Project.Scripts.Connection
         [SerializeField] private TMP_InputField _ipInputField;
         [SerializeField] private TMP_InputField _portInputField;
         [Space(5)]
+        [Header("Other UI Elements")]
         [SerializeField] private Button _connectButton; 
+        [SerializeField] private GameObject _connectionPanel;
         
         private void Start()
         {
@@ -25,6 +28,10 @@ namespace _Project.Scripts.Connection
             try
             {
                 if (Settings.UseAutoFillInputFieldsInputFields) AutoFillInputFields();
+                
+                _connectionPanel.SetActive(true);
+                CustomNetworkManager.OnCreatedConnection += () =>
+                { _connectionPanel.SetActive(false); };
                 
                 UpdateButtonInteractableState();
                 AddConnectionListener();
