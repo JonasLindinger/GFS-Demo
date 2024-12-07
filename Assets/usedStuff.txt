@@ -1,0 +1,7 @@
+- Figma
+- URP
+- Low Poly FPS Map Lite
+- Netcode For GameObjects (NGO)
+- TMPro
+- Multiplayer- Center, Play Mode, Services, Tools and Widgets.
+- Jetbrains Rider
