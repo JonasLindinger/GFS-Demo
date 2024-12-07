@@ -24,6 +24,8 @@ namespace _Project.Scripts.Connection
             #if Client
             try
             {
+                if (Settings.UseAutoFillInputFieldsInputFields) AutoFillInputFields();
+                
                 UpdateButtonInteractableState();
                 AddConnectionListener();
                 AddInputFieldListeners();
@@ -33,11 +35,21 @@ namespace _Project.Scripts.Connection
                 Debug.LogError($"Failed to connect the UI with the NetworkManager. A reference is missing. {e.Message}");
             }
             #elif Server
-            CustomNetworkManager.StartServer("", 7000);
+            CustomNetworkManager.StartServer("", Settings.DefaultPort);
             #endif
         }
 
         #if Client
+        /// <summary>
+        /// Fills the input fields with default values.
+        /// </summary>
+        private void AutoFillInputFields()
+        {
+            _usernameInputField.text = $"Guest_{UnityEngine.Random.Range(1111, 9999)}";
+            _ipInputField.text = Settings.AutoFillIP;
+            _portInputField.text = Settings.DefaultPort.ToString();
+        }
+
         /// <summary>
         /// Adds a listener to the connect button to start the client or server.
         /// </summary>
