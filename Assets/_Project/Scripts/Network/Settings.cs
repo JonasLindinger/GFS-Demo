@@ -16,14 +16,20 @@ namespace _Project.Scripts.Network
         // Getters
         public static uint PhysicsTickRate => Instance._physicsTickRate;
         public static uint NetworkTickRate => Instance._physicsTickRate;
+        public static uint TickAdjustmentRate => Instance._tickAdjustmentRate;
+        public static bool ControlPhysics => Instance._controlPhysics;
         public static bool UseAutoFillInputFieldsInputFields => Instance._useAutoFillInputFields;
         public static ushort DefaultPort => Instance._defaultPort;
         public static string AutoFillIP => Instance._autoFillIP;
 
         // Inspector Fields
         [Header("Tick System")]
-        [SerializeField] private uint _physicsTickRate = 64;
-        [SerializeField] private uint _networkTickRate = 64;
+        [SerializeField] private uint _physicsTickRate = 64; // 64 Ticks per Second
+        [SerializeField] private uint _networkTickRate = 64; // 64 Ticks per Second
+        [SerializeField] private uint _tickAdjustmentRate = 1; // Once every Second
+        [Space(5)] 
+        [SerializeField] private bool _controlPhysics = false;
+        [Space(5)]
         [SerializeField] private bool _useAutoFillInputFields = true;
         [Space(5)]
         [SerializeField] private ushort _defaultPort = 7000;
