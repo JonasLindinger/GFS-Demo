@@ -8,6 +8,8 @@ namespace _Project.Scripts.Network
     /// </summary>
     public class Settings : MonoBehaviour
     {
+        // Todo: Add Connection Approval, Timeout and Reconnecting
+        // Todo: Add Actual Player Model
         // Singleton reference
         private static Settings Instance { get; set; }
         
@@ -15,16 +17,17 @@ namespace _Project.Scripts.Network
         public static uint PhysicsTickRate => Instance._physicsTickRate;
         public static uint NetworkTickRate => Instance._physicsTickRate;
         public static bool UseAutoFillInputFieldsInputFields => Instance._useAutoFillInputFields;
-
         public static ushort DefaultPort => Instance._defaultPort;
-        public static readonly string AutoFillIP = "127.0.0.1";
-        
+        public static string AutoFillIP => Instance._autoFillIP;
+
         // Inspector Fields
         [Header("Tick System")]
         [SerializeField] private uint _physicsTickRate = 64;
         [SerializeField] private uint _networkTickRate = 64;
         [SerializeField] private bool _useAutoFillInputFields = true;
+        [Space(5)]
         [SerializeField] private ushort _defaultPort = 7000;
+        [SerializeField] private string _autoFillIP = "127.0.0.1";
 
         private void Awake()
         {
