@@ -12,11 +12,13 @@ namespace LindoNoxStudio.Network.Connection
         // Todo: Add different Client Side Prediction modes (Predict local, Predict Everything, don't Predict)
         // Make Override the Connection data for real use
         // Connection Data to connect to
-        private static ConnectionData _connectionData = new ConnectionData()
+        public static ConnectionData ConnectionData = new ConnectionData()
         {
             IP = "127.0.0.1", // Default ip = 127.0.0.1 (localHost) for testing purposes
             Port = 7778 // Default Port = 7778 for testing purposes
         };
+
+        public static string Username = "Client" + Random.Range(1111, 9999).ToString();
         
         private void Start()
         {
@@ -38,8 +40,8 @@ namespace LindoNoxStudio.Network.Connection
             // Setting the connection data
             unityTransport.ConnectionData = new UnityTransport.ConnectionAddressData()
             {
-                Address = _connectionData.IP,
-                Port = _connectionData.Port
+                Address = ConnectionData.IP,
+                Port = ConnectionData.Port
             };
         }
         
@@ -76,7 +78,7 @@ namespace LindoNoxStudio.Network.Connection
             // Creating Connection Data, saving it
             // Set clientId to SteamId or something like that
             ulong clientId = (ulong) Random.Range(11111, 99999);
-            NetworkManager.Singleton.NetworkConfig.ConnectionData = ConnectionPayload.Encode(clientId, "Client " + clientId);
+            NetworkManager.Singleton.NetworkConfig.ConnectionData = ConnectionPayload.Encode(clientId, Username);
             
             // Starting client and logging the client status
             if (NetworkManager.Singleton.StartClient())

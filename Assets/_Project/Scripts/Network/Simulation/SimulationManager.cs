@@ -129,9 +129,7 @@ namespace LindoNoxStudio.Network.Simulation
                 
             // Predicting local player state
             if (NetworkPlayer.LocalNetworkPlayer)
-            {
                 NetworkPlayer.LocalNetworkPlayer.PredictLocalState(tick);
-            }
             
             #elif Server
             // Update all players

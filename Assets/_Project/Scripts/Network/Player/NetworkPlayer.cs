@@ -1,16 +1,19 @@
 using System.Collections.Generic;
 using System.Linq;
+using LindoNoxStudio.Network.Game.Camera;
 using LindoNoxStudio.Network.Input;
 using LindoNoxStudio.Network.Simulation;
 using Unity.Cinemachine;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Client = LindoNoxStudio.Network.Connection.Client;
 using NetworkClient = LindoNoxStudio.Network.Connection.NetworkClient;
 
 namespace LindoNoxStudio.Network.Player
 {
     [RequireComponent(typeof(PlayerController))]
+    [RequireComponent(typeof(CameraOwner))]
     public class NetworkPlayer : NetworkBehaviour
     {
         #if Client
@@ -20,17 +23,21 @@ namespace LindoNoxStudio.Network.Player
         // Values
         private uint _lastReceavedGameStateTick;
         
+        private CameraOwner _cameraOwner;
+        
         #elif Server
         // Client info reference
         private Client _networkClient;
         #endif
         
         // References
-        [HideInInspector] public PlayerController _playerController;
+        [HideInInspector] public PlayerController playerController;
         
         public override void OnNetworkSpawn()
         {
             #if Client
+            _cameraOwner = GetComponent<CameraOwner>();
+            
             // Referencing Singleton
             if (IsOwner)
                 LocalNetworkPlayer = this;
@@ -41,7 +48,7 @@ namespace LindoNoxStudio.Network.Player
             #endif
 
             // Referencing
-            _playerController = GetComponent<PlayerController>();
+            playerController = GetComponent<PlayerController>();
         }
         
         public override void OnNetworkDespawn()
@@ -64,7 +71,8 @@ namespace LindoNoxStudio.Network.Player
             ClientInputState input = NetworkClient.LocalClient._input.GetClientInputState(tick);
             
             // Process new input
-            _playerController.OnInput(input);
+            playerController.OnInput(input);
+            _cameraOwner.UpdateCam(transform.position, transform.rotation);
             
             return input;
         }
@@ -80,7 +88,7 @@ namespace LindoNoxStudio.Network.Player
             ClientInputState input = _networkClient.NetworkClient._input.GetClientInputState(tick);
             
             // Process new input
-            _playerController.OnInput(input);
+            playerController.OnInput(input);
         }
         #endif
 

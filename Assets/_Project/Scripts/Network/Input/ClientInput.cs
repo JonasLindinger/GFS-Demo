@@ -97,7 +97,7 @@ namespace LindoNoxStudio.Network.Input
             clientInputState = new ClientInputState();
             float yRotation = 0;
             if (NetworkPlayer.LocalNetworkPlayer)
-                yRotation = NetworkPlayer.LocalNetworkPlayer._playerController._yaw;
+                yRotation = NetworkPlayer.LocalNetworkPlayer.playerController._yaw;
             
             // We don't have the ClientInputState, so we return the current Input State
             try

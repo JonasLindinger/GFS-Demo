@@ -1,16 +1,14 @@
 using Unity.Netcode;
+using UnityEngine;
 
 namespace LindoNoxStudio.Network.Game.Camera
 {
-    public class CameraElement : NetworkBehaviour
+    public class CameraElement : MonoBehaviour
     {
         #if Client
-        public override void OnNetworkSpawn()
-        {
-            Register();
-        }
-
-        public override void OnNetworkDespawn()
+        private bool _isRegistered = false;
+        
+        private void OnDestroy()
         {
             RemoveRegistration();
         }
@@ -18,9 +16,11 @@ namespace LindoNoxStudio.Network.Game.Camera
         /// <summary>
         /// Adding this camera element to list
         /// </summary>
-        private void Register()
+        public void Register(bool isOwner)
         {
-            CameraManager.Instance.AddCameraElement(this, IsOwner);
+            if (_isRegistered) return;
+            _isRegistered = true;
+            CameraManager.Instance.AddCameraElement(this, isOwner);
         }
         
         /// <summary>
@@ -28,6 +28,8 @@ namespace LindoNoxStudio.Network.Game.Camera
         /// </summary>
         private void RemoveRegistration()
         {
+            if (!_isRegistered) return;
+            _isRegistered = false;
             CameraManager.Instance.RemoveCameraElement(this);
         }
         #endif

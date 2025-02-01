@@ -101,6 +101,7 @@ namespace LindoNoxStudio.Network.Simulation
                 case StateType.Ball:
                     break;
             }
+            
             networkedObject.ApplyState(state);
         }
 

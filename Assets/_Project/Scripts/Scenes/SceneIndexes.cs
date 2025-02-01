@@ -6,7 +6,8 @@ namespace LindoNoxStudio.Scenes
     public enum SceneIndexes : int
     {
         Init = 0,
-        NetworkLayer = 1,
-        Game = 2,
+        Menu = 1,
+        NetworkLayer = 2,
+        Game = 3,
     }   
 }
