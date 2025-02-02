@@ -95,8 +95,8 @@ namespace LindoNoxStudio.Network.Simulation
             {
                 case StateType.Player:
                     PlayerState playerState = (PlayerState) state;
-                    PlayerState predictetPlayerState = (PlayerState) _gameStates[(int)tick % GameStateBufferSize].States[networkId];
-                    Debug.Log("Prediction was right: " + (Vector3.Distance(playerState.Position, predictetPlayerState.Position) < 0.001f).ToString());
+                    PlayerState predictedPlayerState = (PlayerState) _gameStates[(int)tick % GameStateBufferSize].States[networkId];
+                    Debug.Log("Prediction was right: " + (Vector3.Distance(playerState.Position, predictedPlayerState.Position) < 0.001f).ToString());
                     break;
                 case StateType.Ball:
                     break;
