@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using LindoNoxStudio.Network.Simulation;
 using Unity.Netcode;
@@ -36,8 +37,6 @@ namespace LindoNoxStudio.Network.Connection
         
         private async void Start()
         {
-            InitUnity();
-            
             #if Client
             StartClient();
             #elif Server
@@ -82,10 +81,10 @@ namespace LindoNoxStudio.Network.Connection
             multiplayEventCallbacks.Error += MultiplayEventCallback_Error;
             multiplayEventCallbacks.SubscriptionStateChanged += MultiplayEventCallback_SubscriptionStateChanged;
             IServerEvents serverEvents = await MultiplayService.Instance.SubscribeToServerEventsAsync(multiplayEventCallbacks);
-            
+
             _serverQueryHandler = await MultiplayService.Instance.StartServerQueryHandlerAsync(
                 4, 
-                "GameServer: " + Random.Range(1111, 9999).ToString(), 
+                "GameServer: " + Random.Range(1111, 9999).ToString(),
                 "Drone", 
                 "1", 
                 "Playground"
@@ -144,16 +143,6 @@ namespace LindoNoxStudio.Network.Connection
             StartServer(true);
         }
         #endif
-
-        private async void InitUnity()
-        {
-            InitializationOptions initializationOptions = new InitializationOptions();
-            initializationOptions.SetProfile(Random.Range(1111, 9999).ToString());
-            await UnityServices.InitializeAsync(initializationOptions);
-            #if Client
-            await AuthenticationService.Instance.SignInAnonymouslyAsync();
-            #endif
-        }
         
         #if Client
         /// <summary>
