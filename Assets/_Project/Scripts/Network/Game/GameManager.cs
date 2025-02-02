@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using LindoNoxStudio.Network.Ball;
 using LindoNoxStudio.Network.Connection;
 using LindoNoxStudio.Network.Player;
+using Unity.Services.Multiplay;
 using UnityEngine;
 
 namespace LindoNoxStudio.Network.Game
@@ -20,6 +21,8 @@ namespace LindoNoxStudio.Network.Game
         /// </summary>
         public static async Task StartGame()
         {
+            await MultiplayService.Instance.UnreadyServerAsync();
+            
             // Changes the Game State to starting
             GameStatus = GameStatus.Starting;
 

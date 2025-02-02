@@ -9,7 +9,7 @@ namespace LindoNoxStudio.Network.Connection
     {
         #if Server
         // Player count needed to start the game
-        private const int WantedPlayerCount = 2;
+        private const int WantedPlayerCount = 2; // Todo: Adjust this for multiplay
         // Current player count
         private static int _currentPlayerCount;
         
