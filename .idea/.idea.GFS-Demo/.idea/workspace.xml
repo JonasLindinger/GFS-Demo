@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="75dfc39c-94a2-44f5-9175-19bf87e02efb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GFS-Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GFS-Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PlayMode/Client Editor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PlayMode/Client Editor.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/ConnectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/ConnectionManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/NetworkStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/NetworkStarter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Game/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.services.core/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.services.core/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../Project Builds/C#/GFS-Demo/Client Windows\GFS-Demo.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../Project Builds/C#/GFS-Demo/Server Linux/GFS-Demo.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="D:\Project Builds\C#\GFS-Demo\Server Windows" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -117,7 +115,7 @@
       <workItem from="1738350895652" duration="599000" />
       <workItem from="1738416876181" duration="3898000" />
       <workItem from="1738488133291" duration="2482000" />
-      <workItem from="1738490796717" duration="1916000" />
+      <workItem from="1738490796717" duration="2619000" />
     </task>
     <servers />
   </component>

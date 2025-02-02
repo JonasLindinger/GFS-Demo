@@ -2,7 +2,9 @@ using System.Threading.Tasks;
 using LindoNoxStudio.Network.Ball;
 using LindoNoxStudio.Network.Connection;
 using LindoNoxStudio.Network.Player;
+#if Server
 using Unity.Services.Multiplay;
+#endif
 using UnityEngine;
 
 namespace LindoNoxStudio.Network.Game

@@ -5,8 +5,10 @@ using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
 using Unity.Services.Authentication;
 using Unity.Services.Core;
+#if Server
 using Unity.Services.Multiplay;
 using Unity.Services.Multiplayer;
+#endif
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -30,7 +32,7 @@ namespace LindoNoxStudio.Network.Connection
             Port = 7778 // Default Port = 7778 for testing purposes
         };
 
-        public static string Username = "Client" + Random.Range(1111, 9999).ToString();
+        public static string Username;
         
         private async void Start()
         {
@@ -43,6 +45,8 @@ namespace LindoNoxStudio.Network.Connection
                 // This isn't a multiplay Server
                 StartServer(false);
             #endif
+
+            Username = "Client" + Random.Range(1111, 9999).ToString();
         }
 
         private void Update()
