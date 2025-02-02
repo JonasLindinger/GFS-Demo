@@ -915,10 +915,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: c50bc67a-e500-496a-81cc-3d9d555033d3
+  cloudProjectId: ae9baece-9d5f-4724-a6d4-5e780f6e8a66
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: FPS Test
+  projectName: GFS-Demo (1)
   organizationId: somniumcrafter
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
