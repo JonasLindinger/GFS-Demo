@@ -5,26 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75dfc39c-94a2-44f5-9175-19bf87e02efb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/UI/UIConnectionManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/UI/UIConnectionManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GFS-Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GFS-Demo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DefaultNetworkPrefabs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DefaultNetworkPrefabs.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Build Profiles/Client Windows.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles/Client Windows.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunInfo.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/PerformanceTestRunSettings.json.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/Build Profiles/Server Linux.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles/Server Linux.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/Build Profiles/Server Windows.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Build Profiles/Server Windows.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/NetworkLayer.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/NetworkLayer.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/SDFFunctions.hlsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Sprites/EmojiOne Attribution.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Sprites/EmojiOne.json.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Sprites/EmojiOne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_External/Unity/TextMesh Pro/Sprites/EmojiOne.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Initialization/Initializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Initialization/Initializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/NetworkStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/NetworkStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Game/Camera/CameraElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Game/Camera/CameraElement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Game/Camera/CameraOwner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Game/Camera/CameraOwner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Input/ClientInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Input/ClientInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Player/NetworkPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Player/NetworkPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Simulation/SimulationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Simulation/SimulationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Simulation/SnapshotManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Simulation/SnapshotManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneIndexes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Scenes/SceneIndexes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/UI/UIConnectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/UI/UIConnectionManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,21 +61,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../Project Builds/C#/GFS-Demo/Client Windows\GFS-Demo.exe" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../Project Builds/C#/GFS-Demo/Server Linux/GFS-Demo.x86_64" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="D:\Project Builds\C#\GFS-Demo\Server Windows" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -122,6 +138,7 @@
       <workItem from="1738334408687" duration="1140000" />
       <workItem from="1738350895652" duration="599000" />
       <workItem from="1738416876181" duration="3898000" />
+      <workItem from="1738488133291" duration="443000" />
     </task>
     <servers />
   </component>

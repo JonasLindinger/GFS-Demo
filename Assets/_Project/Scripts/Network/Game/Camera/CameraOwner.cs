@@ -7,9 +7,9 @@ namespace LindoNoxStudio.Network.Game.Camera
 {
     public class CameraOwner : NetworkBehaviour
     {
-        #if Client
-        
         [SerializeField] private CameraElement _cameraElementPrefab;
+        
+        #if Client
         
         private CameraElement _cameraElement;
 
