@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="75dfc39c-94a2-44f5-9175-19bf87e02efb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GFS-Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GFS-Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PlayMode/Client Editor with extern Server .asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PlayMode/Client Editor with extern Server .asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Initialization/Initializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Initialization/Initializer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/NetworkStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Network/Connection/NetworkStarter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.services.core/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.services.core/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,7 @@
       <workItem from="1738350895652" duration="599000" />
       <workItem from="1738416876181" duration="3898000" />
       <workItem from="1738488133291" duration="2482000" />
-      <workItem from="1738490796717" duration="3905000" />
+      <workItem from="1738490796717" duration="5767000" />
     </task>
     <servers />
   </component>

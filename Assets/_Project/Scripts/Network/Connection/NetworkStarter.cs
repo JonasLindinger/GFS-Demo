@@ -98,6 +98,7 @@ namespace LindoNoxStudio.Network.Connection
                     "", 
                     serverConfig.ServerId,
                     serverConfig.AllocationId));
+                
                 return true;
             }
             else return false;
@@ -215,7 +216,7 @@ namespace LindoNoxStudio.Network.Connection
             if (NetworkManager.Singleton.StartServer())
             {
                 SimulationManager.StartTickSystem();
-                Debug.Log("Server started.");
+                Debug.Log("Server started. IP: " + ConnectionData.IP + ", Port: " + ConnectionData.Port);
 
                 await MultiplayService.Instance.ReadyServerForPlayersAsync();
             }
